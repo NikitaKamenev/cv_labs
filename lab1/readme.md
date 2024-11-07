@@ -52,8 +52,8 @@ def adapt_bin(img_to_bin, dest):
 ## Результат рабооты
 Исходное изображение:
 
-![plot](./take_the_frog.jpg)
+![image](./images/hd.jpg)
 
 Результат работы нативной реализации:
 
-![plot](./result.jpg)
+![result](./binarized_images_lib/adaptive_binarized_4k.jpg)
