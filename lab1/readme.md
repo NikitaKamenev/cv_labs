@@ -16,13 +16,13 @@
 ## Реализация скользящего окна
 
 ```python
-for i in range(h_k - 1, M + h_k):
-    for j in range(h_k - 1, N + h_k):
-        m = pdimg[i - h_k + 1:i + h_k, j - h_k + 1:j + h_k].mean() - C
-        if pdimg[i, j] < m:
-            cp_img[i, j] = 0
-        else:
-            cp_img[i, j] = 255
+
+ for i in range(h_k - 1, M + h_k):
+        for j in range(h_k - 1, N + h_k):
+            m = pdimg[i - h_k + 1:i + h_k, j - h_k + 1:j + h_k].mean() - C
+            cp_img[i, j] = 0 if pdimg[i, j] < m else 255
+    end = time.time()
+
 ```
 
 ## Сравнение скорости работы алгоритмов
