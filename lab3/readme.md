@@ -66,6 +66,7 @@ Training complete. Best val F1-Score: 0.9632
 Наилучший результат по F1-score на валидационной выборке составил примерно 0.9632
 
 График ошибок:
+
 ![plot](./loss.jpg)
 
 Матрица ошибок (Confusion Matrix):
